@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image2"
+    android:padding="50dp"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/book_icon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/education_book">
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Welcome to Book App"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/loginBtn"
+        android:background="@drawable/button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_above="@+id/skip_Btn"
+
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/skip_Btn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:text="Continue without login"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
